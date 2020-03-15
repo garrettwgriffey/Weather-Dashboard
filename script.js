@@ -3,7 +3,7 @@
     var APIKey = "50fb093a801ea7cec3ad6773d6bd6102";
     var cityName = "";
     // URL to query the database
-    var queryURL = "api.openweathermap.org/data/2.5/weather?id={city id}&appid=50fb093a801ea7cec3ad6773d6bd6102"
+    var queryURL = "api.openweathermap.org/data/2.5/weather?q=Nashville&appid=50fb093a801ea7cec3ad6773d6bd6102"
 
     // AJAX call
     $.ajax({
