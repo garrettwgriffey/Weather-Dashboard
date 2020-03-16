@@ -14,7 +14,8 @@ $.ajax({
   url: queryURL,
   method: "GET"
 }).then(function (response) {
-  $('#searchBtn').click(function () {
+  $('#searchBtn').on('click', function (e) {
+    e.preventDefault();
     console.log(queryURL);
     console.log(response);
 
@@ -24,9 +25,9 @@ $.ajax({
     $(".humidity").text("Humidity: " + response.main.humidity);
     $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
 
-    console.log("Wind Speed: " + response.wind.speed);
-    console.log("Humidity: " + response.main.humidity);
-    console.log("Temperature (F): " + tempF);
+    // console.log("Wind Speed: " + response.wind.speed);
+    // console.log("Humidity: " + response.main.humidity);
+    // console.log("Temperature (F): " + tempF);
 
 
 
